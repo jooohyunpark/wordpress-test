@@ -9,7 +9,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
-// Update CSS within in Admin
+
 function admin_style() {
 	wp_enqueue_style('admin-styles', get_template_directory_uri() . '/admin.css');
 }
