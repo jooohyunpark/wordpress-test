@@ -9,6 +9,13 @@
  * @since Twenty Twenty-One 1.0
  */
 
+// Update CSS within in Admin
+function admin_style() {
+	wp_enqueue_style('admin-styles', get_template_directory_uri() . '/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
+
+
 // This theme requires WordPress 5.3 or later.
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
